@@ -7,6 +7,8 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
+ALLOWED_HOSTS = ['error-central-cn.herokuapp.com']
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
