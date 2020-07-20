@@ -1,7 +1,7 @@
 from .settings import *
 import dj_database_url
 
-DEGUB = False
+DEBUG = False
 
 DATABASES = {
     'default': dj_database_url.config()
