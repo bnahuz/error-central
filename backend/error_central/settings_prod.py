@@ -7,7 +7,7 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-ALLOWED_HOSTS = ['error-central-cn.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
