@@ -2,7 +2,7 @@ from django.db import models
 
 from apps.login.models import User
 
-class Events(models.Model):
+class Event(models.Model):
 
     class Meta:
 
