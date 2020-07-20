@@ -10,6 +10,9 @@ django = "*"
 djangorestframework = "*"
 psycopg2 = "*"
 pyjwt = "*"
+django-oauth-toolkit = "*"
+django-filter = "*"
+rest-condition = "*"
 
 [requires]
 python_version = "3.7"
