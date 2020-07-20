@@ -42,7 +42,7 @@ DJANGO_APPS = [
 THIRD_APPS = [
     'rest_framework',
     'oauth2_provider',
-
+    'django_filters',
 ]
 
 PROJECT_APPS = [
@@ -53,12 +53,13 @@ PROJECT_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('oauth2_provider.contrib.rest_framework.OAuth2Authentication',),
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
 }
 
 OAUTH2_PROVIDER = {
     # this is the list of available scopes
     'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'},
-    'ACCESS_TOKEN_EXPIRE_SECONDS': 36000,
+    'ACCESS_TOKEN_EXPIRE_SECONDS': 9000000,
 }
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS +PROJECT_APPS

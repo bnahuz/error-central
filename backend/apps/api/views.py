@@ -14,7 +14,7 @@ class EventList(generics.ListCreateAPIView):
     authentication_classes = [OAuth2Authentication, SessionAuthentication]
     permission_classes = [Or(IsAdminUser, TokenHasReadWriteScope)]
     filter_backends = (filters.DjangoFilterBackend,)
-    filter_fields = '__all__'
+    filter_fields = ('event_type', 'level', 'quantity', 'colected_by', 'detail')
 
 class EventDetail(generics.RetrieveUpdateDestroyAPIView):
 

@@ -1,3 +1,4 @@
-/.vscode
-/db.sqlite3
-/Pipfile.lock
+*.vscode
+*.sqlite3
+*.Pipfile.lock
+docs/_build

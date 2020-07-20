@@ -14,7 +14,7 @@ class User(models.Model):
     last_login = models.DateField(default=datetime.date.today)
     email = models.EmailField(("email"), max_length=254, unique= True)
     password = models.CharField(max_length=50, validators=[MinLengthValidator(8)])
-    acess_token = models.CharField(max_length=254)
+    access_token = models.CharField(max_length=500)
 
     def save(self, *args, **kwargs):
         self.password = make_password(self.password)
